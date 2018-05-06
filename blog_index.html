@@ -26,6 +26,19 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="keitaw09">
   <meta name="twitter:image" content="">
+	<!-- Using MathJax, with the delimiters $ -->
+	<!-- Conflict with pygments for the .mo and .mi -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  "HTML-CSS": {
+	  styles: {
+	  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+	  },
+	  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+	  });
+	</script>
+
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 
 <meta name="twitter:creator" content="keitaw09">
 <meta name="twitter:url" content="">
@@ -102,7 +115,7 @@
 		<a href="/author/keitaw.html">@KeitaW</a>
 		<span> in </span>
 		<span class="post_category"><a href="/category/pelican.html" rel="bookmark" title="Permalink to Pelican">[ Pelican ]</a></span>
-		<span class="post_date">土, 04  1 2014</span>
+		<span class="post_date">Sat, 04 Jan 2014</span>
 	</li>
 </ol>
 
