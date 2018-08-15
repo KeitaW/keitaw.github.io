@@ -1,126 +1,131 @@
-<!doctype html>
-<html lang="en" itemscope itemtype="http://schema.org/Person">
-<head>
-  <meta charset="utf-8">
-  <!-- Site Meta Data -->
-  <title> Manekiel | A blog written by a PhD Student in a laboratory for Computational Neuroscience </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="KeitaW">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="shortcut icon" href="">
-
-  <!-- schema.org -->
-  <meta itemprop="name" content="Manekiel">
-  <meta itemprop="image" content="">
-  <meta itemprop="description" content="">
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <!-- Style Meta Data -->
-  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
-  <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
-
-  <!-- Feed Meta Data -->
-
-  <!-- Twitter Feed -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="keitaw09">
-  <meta name="twitter:image" content="">
-	<!-- Using MathJax, with the delimiters $ -->
-	<!-- Conflict with pygments for the .mo and .mi -->
-	<script type="text/x-mathjax-config">
-	  MathJax.Hub.Config({
-	  "HTML-CSS": {
-	  styles: {
-	  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-	  },
-	  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-	  });
-	</script>
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
-
-<meta name="twitter:creator" content="keitaw09">
-<meta name="twitter:url" content="/categories.html">
-<meta name="twitter:title" content="Manekiel ~ Catégories">
-<meta name="twitter:description" content="Manekiel ~ Catégories du site">
-
-<!-- Facebook Meta Data -->
-<meta property="og:title" content="Manekiel ~ Catégories" />
-<meta property="og:description" content="Manekiel ~ Catégories" />
-<meta property="og:image" content="" />
-</head>
-
-<script type="text/javascript" src="js/footerFixed.js"></script>
-<body>
-  <!-- Sidebar -->
-  <aside>
-    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
-    <h1>Manekiel</h1>
-      <p>A blog written by a PhD Student in a laboratory for Computational Neuroscience</p>
-    <br>
+    <base href="">
 
     <!--
-      <a class="twitter-follow-button"
-      href="https://twitter.com/keitaw09"
-      data-show-count="false"
-      data-lang="en">
-      Follow @twitterdev
-      </a>
-      <script type="text/javascript">
-      window.twttr = (function (d, s, id) {
-        var t, js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src= "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-      }(document, "script", "twitter-wjs"));
-      </script>
+    favicons generated with:
+    <http://realfavicongenerator.net>
+
+    if you want to generate your own favicon, use this custom path:
+    /theme/ico/favicon/
     -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/theme/ico/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/theme/ico/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/ico/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/theme/ico/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/ico/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/theme/ico/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/theme/ico/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/theme/ico/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/theme/ico/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/theme/ico/favicon/manifest.json">
+    <link rel="mask-icon" href="/theme/ico/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/theme/ico/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/theme/ico/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/theme/ico/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-    <nav class="nav">
-      <ul class="list-bare">
-      
-          <li><a class="nav__link" href="blog_index.html">Blog</a></li>
-          <li><a class="nav__link" href="index.html">Author</a></li>
-          <li><a class="nav__link" href="files/cv.pdf">CV</a></li>
-         
-         
-      </ul>
-    </nav>
+    
+    <script src="/theme/js/lib/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme/css/uikit.almost-flat.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.min.css" />
+    <!-- default pygment style is the 'default' style -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.min.css" />
+    <script src="/theme/js/uikit.min.js"></script>
+    <title>All the categories | Manekiel</title>
 
-    <p class="social">
-        <a href="https://www.linkedin.com/in/keita-watanabe-b33956141" target="_blank" ><img src="/theme/images/icons/linkedin.png"></a>
-        <a href="https://github.com/keitaw" target="_blank" ><img src="/theme/images/icons/github.png"></a>
-        <a href="https://twitter.com/keitaw09" target="_blank" ><img src="/theme/images/icons/twitter.png"></a>
-    </p>
-
-    <!--
-    <h2>Categories</h2>
-    <ul class="navbar">
+ 
+  </head>
+  <body>
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="">Manekiel</a>
+        <ul class="uk-navbar-nav uk-hidden-small">
       <li><a href="/category/pelican.html">Pelican</a></li>
-    </ul> 
-    -->
-  </aside>
-
-  <!-- Content -->
-  <article>
-<h2>Categories</h2>
-<ul class="category_folder">
-	<li><a href="category/pelican.html">Pelican</a></li>
-</ul>
-  </article>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <p style="font-size:12px">
-      Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
-      which takes great advantage of <a href="http://python.org">Python</a>.
-      Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
-    </p>
-  </footer>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Manekiel</div>
+    </nav>
+    <div class="uk-grid" data-uk-grid-margin="">
+        <main class="uk-width-medium-3-4">
 
 
-</body>
+<h1>All the categories</h1>
+
+    <h2>
+        <span class="entity">Pelican</span>
+    </h2>
+    <ul>
+        <li><a class="capitalize" href="/first-post.html">Test blog post</a></li>
+        <li><a class="capitalize" href="/third-post.html">Test Jupyter post</a></li>
+    </ul>
+        </main>
+        <aside class="uk-width-medium-1-4">
+
+  <div class="uk-panel uk-panel-box uk-text-center">
+    <a href="/author/author.html">
+      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/tori.jpeg"/><h3>KeitaW</h3></a>
+      <p>
+      Blog on theoretical neuroscience, machine learning, etc.
+
+      <a href="/author/author.html">About me</a>.
+      </p>
+  </div>
+
+  <div class="uk-panel">
+      <h3 class="uk-panel-title">Social Links</h3>
+      <div class="icons">
+          <a href="https://www.linkedin.com/in/keita-watanabe-b33956141" class="uk-icon-button uk-icon-justify uk-icon-linkedin"></a>
+          <a href="https://github.com/keitaw" class="uk-icon-button uk-icon-justify uk-icon-github"></a>
+          <a href="https://twitter.com/keitaw09" class="uk-icon-button uk-icon-justify uk-icon-twitter"></a>
+      </div>
+  </div>
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Tags</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="/tag/pelican.html" class="uk-icon-tag">pelican</a></li>
+          <li><a href="/tag/python.html" class="uk-icon-tag">python</a></li>
+    </ul>
+    </div>
+
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Links</h3>
+    <ul class="uk-list uk-list-line">
+    </div>
+
+        </aside>
+    </div>
+    <footer class="uk-margin-bottom uk-panel uk-panel-box uk-text-center uk-margin-large-top">
+        Generated by <a href="https://github.com/getpelican/pelican" class="uk-icon-external-link">pelican</a>
+        and styled with <a href="http://getuikit.com" class="uk-icon-external-link">uikit</a>
+        and themed by <a href="http://inktrap.org" class="uk-icon-external-link">inktrap</a>
+        and made with <a class="uk-icon-heart"></a>
+        <br/>
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
+
+            <br/>
+            <a class="uk-icon-rss-square"></a><a href="/categories.xml">Feed</a> for this page
+    </footer>
+</div>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+      <li><a href="/category/pelican.html">Pelican</a></li>
+        </ul>
+    </div>
+</div>
+  </body>
 </html>

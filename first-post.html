@@ -1,141 +1,104 @@
-<!doctype html>
-<html lang="en" itemscope itemtype="http://schema.org/Person">
-<head>
-  <meta charset="utf-8">
-  <!-- Site Meta Data -->
-  <title>Test blog post</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="KeitaW">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="shortcut icon" href="">
-
-  <!-- schema.org -->
-  <meta itemprop="name" content="Manekiel">
-  <meta itemprop="image" content="">
-  <meta itemprop="description" content="">
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <!-- Style Meta Data -->
-  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
-  <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
-
-  <!-- Feed Meta Data -->
-
-  <!-- Twitter Feed -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="keitaw09">
-  <meta name="twitter:image" content="">
-	<!-- Using MathJax, with the delimiters $ -->
-	<!-- Conflict with pygments for the .mo and .mi -->
-	<script type="text/x-mathjax-config">
-	  MathJax.Hub.Config({
-	  "HTML-CSS": {
-	  styles: {
-	  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-	  },
-	  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-	  });
-	</script>
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
-
-<meta name="twitter:creator" content="keitaw09">
-<meta name="twitter:url" content="/first-post.html">
-<meta name="twitter:title" content="Manekiel ~ Test blog post">
-<meta name="twitter:description" content="<p>Test page</p>">
-
-<!-- Facebook Meta Data -->
-<meta property="og:title" content="Manekiel ~ Test blog post" />
-<meta property="og:description" content="<p>Test page</p>" />
-<meta property="og:image" content="" />
-</head>
-
-<script type="text/javascript" src="js/footerFixed.js"></script>
-<body>
-  <!-- Sidebar -->
-  <aside>
-    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
-    <h1>Manekiel</h1>
-      <p>A blog written by a PhD Student in a laboratory for Computational Neuroscience</p>
-    <br>
+    <base href="">
 
     <!--
-      <a class="twitter-follow-button"
-      href="https://twitter.com/keitaw09"
-      data-show-count="false"
-      data-lang="en">
-      Follow @twitterdev
-      </a>
-      <script type="text/javascript">
-      window.twttr = (function (d, s, id) {
-        var t, js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src= "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-      }(document, "script", "twitter-wjs"));
-      </script>
-    -->
+    favicons generated with:
+    <http://realfavicongenerator.net>
 
-    <nav class="nav">
-      <ul class="list-bare">
-      
-          <li><a class="nav__link" href="blog_index.html">Blog</a></li>
-          <li><a class="nav__link" href="index.html">Author</a></li>
-          <li><a class="nav__link" href="files/cv.pdf">CV</a></li>
-         
-         
-      </ul>
+    if you want to generate your own favicon, use this custom path:
+    /theme/ico/favicon/
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/theme/ico/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/theme/ico/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/ico/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/theme/ico/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/ico/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/theme/ico/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/theme/ico/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/theme/ico/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/theme/ico/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/theme/ico/favicon/manifest.json">
+    <link rel="mask-icon" href="/theme/ico/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/theme/ico/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/theme/ico/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/theme/ico/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="/theme/js/lib/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme/css/uikit.almost-flat.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.min.css" />
+    <!-- default pygment style is the 'default' style -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.min.css" />
+    <script src="/theme/js/uikit.min.js"></script>
+    <title>Test blog post | Manekiel</title>
+   <meta name="tags" content="pelican, python" />  <meta name="description" content="Test page" />  <meta name="category" content="Pelican" /> 
+  </head>
+  <body>
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="">Manekiel</a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+      <li class="uk-active"><a href="/category/pelican.html">Pelican</a></li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Manekiel</div>
     </nav>
+    <div class="uk-grid" data-uk-grid-margin="">
+        <main class="uk-width-medium-3-4">
+<article>
+<div class="uk-article">
+    <header>
+    <h1 class="capitalize uk-article-title">
+        <a href="/first-post.html">Test blog post</a>
+    </h1>
+    <p class="uk-article-meta">
+    Published on   <time datetime="2014-01-04">Sat, 04 Jan 2014</time>
+        by         <a class="url fn" href="/author/keitaw.html">KeitaW</a>
+    posted in <a href="/category/pelican.html">Pelican</a>
+    <br/>
+    <a href="/tag/pelican.html" class="uk-icon-tag">pelican</a>
+    <a href="/tag/python.html" class="uk-icon-tag">python</a>
 
-    <p class="social">
-        <a href="https://www.linkedin.com/in/keita-watanabe-b33956141" target="_blank" ><img src="/theme/images/icons/linkedin.png"></a>
-        <a href="https://github.com/keitaw" target="_blank" ><img src="/theme/images/icons/github.png"></a>
-        <a href="https://twitter.com/keitaw09" target="_blank" ><img src="/theme/images/icons/twitter.png"></a>
     </p>
-
-    <!--
-    <h2>Categories</h2>
-    <ul class="navbar">
-      <li class="active"><a href="/category/pelican.html">Pelican</a></li>
-    </ul> 
-    -->
-  </aside>
-
-  <!-- Content -->
-  <article>
-<section id="content">
-    <article>
-        <h2 class="post_title post_detail"><a href="/first-post.html" rel="bookmark" title="Permalink to Test blog post">Test blog post</a></h2>
-        <div class="entry-content blog-post">
-            <h1>Title</h1>
+    </header>
+    <h1>Title</h1>
 <ul>
 <li>SyntaxHighlight Test </li>
 </ul>
 <p>python</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">datetime</span>
-<span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">io</span>
-<span class="kn">from</span> <span class="nn">scipy.sparse</span> <span class="kn">import</span> <span class="n">lil_matrix</span><span class="p">,</span> <span class="n">coo_matrix</span>
-<span class="n">scriptdir</span>  <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">projectdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">scriptdir</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">projectdir</span><span class="p">,</span> <span class="s2">&quot;chaldea&quot;</span><span class="p">))</span>
-<span class="n">coprafile</span>  <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">projectdir</span><span class="p">,</span> <span class="s2">&quot;chaldea&quot;</span><span class="p">,</span> <span class="s2">&quot;copra.sh&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;coprafile: &quot;</span><span class="p">,</span> <span class="n">coprafile</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">OpticsAutomaticClustering</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="codehilite"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">datetime</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">subprocess</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">io</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">scipy.sparse</span> <span class="kn">import</span> <span class="n">lil_matrix</span><span class="p">,</span> <span class="n">coo_matrix</span></span>
+<span class="code-line"><span class="n">scriptdir</span>  <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></span>
+<span class="code-line"><span class="n">projectdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">scriptdir</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">projectdir</span><span class="p">,</span> <span class="s2">&quot;chaldea&quot;</span><span class="p">))</span></span>
+<span class="code-line"><span class="n">coprafile</span>  <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">projectdir</span><span class="p">,</span> <span class="s2">&quot;chaldea&quot;</span><span class="p">,</span> <span class="s2">&quot;copra.sh&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="k">print</span><span class="p">(</span><span class="s2">&quot;coprafile: &quot;</span><span class="p">,</span> <span class="n">coprafile</span><span class="p">)</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">OpticsAutomaticClustering</span> <span class="kn">import</span> <span class="o">*</span></span>
 </pre></div>
 
 
 <p>Math test</p>
-<p>$$
+<div class="math">$$
 \int_0^\infty \exp df
-$$</p>
-<p>Inline math $\int_0^\infty \exp{x} dx$ test.$e=mc^2$
-thauthu $e=mc^2$ desu.</p>
+$$</div>
+<p>Inline math <span class="math">\(\int_0^\infty \exp{x} dx\)</span> test.<span class="math">\(e=mc^2\)</span>
+thauthu <span class="math">\(e=mc^2\)</span> desu.</p>
 <p>Slideshare embedding test</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/1GYa6eAoguN0SM" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
@@ -146,43 +109,118 @@ thauthu $e=mc^2$ desu.</p>
 <p>Notebook test
 {% notebook test_notebook.ipynb %}
 3</p>
-        </div>
-        <div class="post_list">
-            <span>By </span>
-            <a href="/author/keitaw.html">@KeitaW</a>
-            <span> in </span>
-            <span class="post_category"><a href="/category/pelican.html" rel="bookmark" title="Permalink to Pelican">[ Pelican ]</a></span>
-            <span class="post_date">Sat, 04 Jan 2014</span>
-            <div><span>Tags : </span>
-                <span><a href="/tag/pelican.html">#pelican, </a></span>
-                <span><a href="/tag/python.html">#python, </a></span>
-            </div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
 
-            <div class="entry-social">
-                <span class="twitter"><a target="_blank" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;" title="Twitter" href="https://twitter.com/share?url=/first-post.html&text=Test blog post&via=keitaw09"><img src="/theme/images/icons/twitter-s.png"></a></span>
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
 
-                <span class="gplus"><a target="_blank" title="Google +" href="https://plus.google.com/share?url=/first-post.html&hl=fr" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="/theme/images/icons/google-s.png"></a></span>
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+</div>
+</article>
+        </main>
+        <aside class="uk-width-medium-1-4">
 
-                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" href="https://www.facebook.com/sharer.php?u=/first-post.html&t=Test blog post"><img src="/theme/images/icons/facebook-s.png"></a></span>
+  <div class="uk-panel uk-panel-box uk-text-center">
+    <a href="/author/author.html">
+      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/tori.jpeg"/><h3>KeitaW</h3></a>
+      <p>
+      Blog on theoretical neuroscience, machine learning, etc.
 
-                <a  target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=/first-post.html&title=Test blog post" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="/theme/images/icons/linkedin-s.png"></a>
+      <a href="/author/author.html">About me</a>.
+      </p>
+  </div>
 
-                <span class="mail"><a href="mailto:?subject=Test blog post&amp;body=Viens découvrir un article à propos de [Test blog post] sur le site de KeitaW. /first-post.html" title="Share by Email" target="_blank"><img src="/theme/images/icons/mail-s.png"></a></span>
-            </div>
-        </div>
-    </article>
-</section>
-  </article>
+  <div class="uk-panel">
+      <h3 class="uk-panel-title">Social Links</h3>
+      <div class="icons">
+          <a href="https://www.linkedin.com/in/keita-watanabe-b33956141" class="uk-icon-button uk-icon-justify uk-icon-linkedin"></a>
+          <a href="https://github.com/keitaw" class="uk-icon-button uk-icon-justify uk-icon-github"></a>
+          <a href="https://twitter.com/keitaw09" class="uk-icon-button uk-icon-justify uk-icon-twitter"></a>
+      </div>
+  </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <p style="font-size:12px">
-      Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
-      which takes great advantage of <a href="http://python.org">Python</a>.
-      Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
-    </p>
-  </footer>
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Tags</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="/tag/pelican.html" class="uk-icon-tag">pelican</a></li>
+          <li><a href="/tag/python.html" class="uk-icon-tag">python</a></li>
+    </ul>
+    </div>
 
 
-</body>
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Links</h3>
+    <ul class="uk-list uk-list-line">
+    </div>
+
+        </aside>
+    </div>
+    <footer class="uk-margin-bottom uk-panel uk-panel-box uk-text-center uk-margin-large-top">
+        Generated by <a href="https://github.com/getpelican/pelican" class="uk-icon-external-link">pelican</a>
+        and styled with <a href="http://getuikit.com" class="uk-icon-external-link">uikit</a>
+        and themed by <a href="http://inktrap.org" class="uk-icon-external-link">inktrap</a>
+        and made with <a class="uk-icon-heart"></a>
+        <br/>
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
+
+    </footer>
+</div>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+      <li class="uk-active"><a href="/category/pelican.html">Pelican</a></li>
+        </ul>
+    </div>
+</div>
+  </body>
 </html>
