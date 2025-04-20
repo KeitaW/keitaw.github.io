@@ -5,6 +5,7 @@ theme = 'PaperMod'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-[params]
-  [params.assets]
-    favicon = "/favicon.ico"
+[params.assets]
+  favicon = "favicon.svg"
+  favicon16x16 = "favicon.svg"
+  favicon32x32 = "favicon.svg"
