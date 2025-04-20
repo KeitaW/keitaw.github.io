@@ -1,7 +1,7 @@
 baseURL = 'https://github.keitaw.io'
 languageCode = 'en-us'
 title = 'Keita Watanabe'
-theme = 'ananke'
+theme = 'PaperMod'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
