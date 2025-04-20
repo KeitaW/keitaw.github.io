@@ -9,8 +9,17 @@ theme = 'PaperMod'
   favicon = "favicon.svg"
   favicon16x16 = "favicon.svg"
   favicon32x32 = "favicon.svg"
-[params.homeInfoParams]
-    content = "this is content"
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    identifier = "about"
+    name = "About me"
+    url = "/about"
+    weight = 2
+
 [[params.socialIcons]]
     name = "Github"
     url = "https://github.com/KeitaW"
